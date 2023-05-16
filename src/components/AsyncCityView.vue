@@ -51,7 +51,7 @@
       </p>
       <img
         class="w-[150px] h-auto"
-        :src="`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`"
+        :src="`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`"
         alt=""
       />
     </div>
@@ -77,7 +77,7 @@
             </p>
             <img
               class="w-auto h-[50px] object-cover"
-              :src="`http://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`"
+              :src="`https://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`"
               alt=""
             />
             <p class="text-xl">
@@ -103,7 +103,7 @@
           </p>
           <img
             class="w-[50px] h-[50px] object-cover"
-            :src="`http://openweathermap.org/img/wn/${day.icon}@2x.png`"
+            :src="`https://openweathermap.org/img/wn/${day.icon}@2x.png`"
             alt=""
           />
           <div class="flex gap-2 flex-1 justify-end">
@@ -160,7 +160,7 @@ const getWeatherData = async () => {
       }&units=${unit.value}`
     );
     const airQualityWeatherData = axios.get(
-      `http://api.openweathermap.org/data/2.5/air_pollution?lat=${
+      `https://api.openweathermap.org/data/2.5/air_pollution?lat=${
         route.query.lat
       }&lon=${route.query.lng}&appid=${
         import.meta.env.VITE_OPEN_WEATHER_MAP_API_KEY
