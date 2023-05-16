@@ -89,7 +89,6 @@ const getSearchResults = () => {
       } catch {
         searchError.value = true;
       }
-      console.log(weatherSearchResults.value);
       return;
     }
     weatherSearchResults.value = null;

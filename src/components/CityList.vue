@@ -67,7 +67,6 @@ const deleteCity = (cityID) => {
     savedCities.value.findIndex((city) => city.id === cityID)
   ].deleted = true;
 };
-console.log(savedCities.value);
 // SORTING
 const sortTypes = ref(["first added", "last added", "from A-Z", "from Z-A"]);
 const currentSortType = ref(0);
