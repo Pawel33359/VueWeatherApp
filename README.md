@@ -1,6 +1,6 @@
 # vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+This project was made with the help of youtube course "Weather App Build (Vue 3 & Tailwind)" by John Komarnicki and The Net Ninja. To that project I added: 404 page, error messages, option to remove cities from main page, air pollution information on weather overview page, ability to go to first search result when you click enter and used different weather api.
 
 ## Recommended IDE Setup
 
